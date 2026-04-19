@@ -1,16 +1,23 @@
 package net.achraf.metier;
 
 import net.achraf.dao.IDao;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
 
 /**
  * @author macbook
  **/
+
+@Component("metier")
 public class MetierImpl implements IMetier {
+
     private IDao dao;
 
     public MetierImpl(){}
 
-    public MetierImpl(IDao dao){
+    @Autowired
+    public MetierImpl(@Qualifier("d2") IDao dao){
         this.dao = dao;
     }
 
