@@ -1,4 +1,4 @@
-package net.achraf.net.achraf.ext;
+package net.achraf.ext;
 
 import net.achraf.dao.IDao;
 

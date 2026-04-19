@@ -1,8 +1,7 @@
 package net.achraf.pres;
 
-import net.achraf.dao.DaoImpl;
 import net.achraf.metier.MetierImpl;
-import net.achraf.net.achraf.ext.DaoImplV2;
+import net.achraf.ext.DaoImplV2;
 
 /**
  * @author macbook
